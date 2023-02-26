@@ -1,0 +1,35 @@
+{
+  "name": "space-fighters",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "space-fighters",
+    "productName": "Space Fighters",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "directories": {
+        "output": "dist"
+      },
+      "icon": "290836.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "keywords": [],
+  "author": "Abdelrahman",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^22.0.0",
+    "electron-builder": "^23.6.0",
+    "electron-reload": "2.0.0-alpha.1"
+  }
+}
